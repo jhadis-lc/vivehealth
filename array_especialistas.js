@@ -179,9 +179,9 @@ function mostrarDetallesDoctor(doctor) {
                                     <h3>Selecciona un paquete:</h3>
                                     <select id="packageSelect">
                                         <option value="">Elige un paquete</option>
-                                        <option value="paquete1">Paquete x1 - S/120 c/u - $850 c/u</option>
-                                        <option value="paquete2">Paquete x2 - S/100 c/u - $700 c/u</option>
-                                        <option value="paquete3">Paquete x3 - S/80 c/u - $500 c/u</option>
+                                        <option value="paquete1">Paquete individual - S/120</option>
+                                        <option value="paquete2">Paquete pareja - S/180</option>
+                                        <option value="paquete3">Paquete familiar - S/220 </option>
                                     </select>
                                 </div>
                                 <div id="packageDetails"></div>
@@ -214,13 +214,13 @@ function mostrarDetallesDoctor(doctor) {
 
                 switch(selectedPackage) {
                     case 'paquete1':
-                        details = 'Paquete x1: Incluye una sesión individual. Precio: S/120 o $850.';
+                        details = 'Paquete individual: Para 1 persona. Incluye sesiones de 60 minutos';
                         break;
                     case 'paquete2':
-                        details = 'Paquete x2: Incluye dos sesiones. Precio por sesión: S/100 o $700.';
+                        details = 'Paquete pareja: Para 2 personas. Incluye sesiones de 120 minutos';
                         break;
                     case 'paquete3':
-                        details = 'Paquete x3: Incluye tres sesiones. Precio por sesión: S/80 o $500.';
+                        details = 'Paquete familiar: Para 3-4 personas. Incluye sesiones de 190 minutos';
                         break;
                     default:
                         details = 'Selecciona un paquete para ver los detalles.';
